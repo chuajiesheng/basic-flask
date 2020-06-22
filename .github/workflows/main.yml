@@ -16,9 +16,5 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
         registry: docker.pkg.github.com
-        image: chuajiesheng/basic-flask/base
-        # Server address of Docker registry. If not set then will default to Docker Hub
-        # Docker repository to tag the image with
+        repository: chuajiesheng/basic-flask/base
         tag_with_ref: true
-        # Automatically tags the built image with the git short SHA as per the readme
-        tag_with_sha: true
