@@ -1,7 +1,6 @@
 import os
-from logging.config import dictConfig
-
 from flask import Flask
+from logging.config import dictConfig
 
 
 def create_app(test_config=None):
@@ -36,7 +35,7 @@ def create_app(test_config=None):
         pass
 
     # a simple page that says hello
-    @app.route('/hello')
+    @app.route('/health')
     def hello():
         return 'Ok'
 
