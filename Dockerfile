@@ -15,7 +15,6 @@ RUN pip3 install --upgrade pip \
 
 WORKDIR /app
 COPY . /app
-RUN mkdir -p uploads/resumes
 
 FROM base AS test
 
