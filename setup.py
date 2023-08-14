@@ -15,7 +15,6 @@ setup(
                    ],
     install_requires=[
         'gunicorn',
-        'wheel',
         'Flask',
     ],
 )
