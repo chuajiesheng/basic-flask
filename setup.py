@@ -11,8 +11,10 @@ setup(
     zip_safe=False,
     python_requires='>=3.7',
     setup_requires=['pytest-runner'],
-    tests_require=['pytest',
-                   ],
+    tests_require=[
+        'pytest',
+        'freezegun'
+    ],
     install_requires=[
         'gunicorn',
         'Flask',

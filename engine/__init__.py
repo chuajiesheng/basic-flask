@@ -1,4 +1,5 @@
 import os
+from datetime import datetime, timezone
 from flask import Flask
 from logging.config import dictConfig
 
@@ -36,8 +37,12 @@ def create_app(test_config=None):
 
     # a simple page that says hello
     @app.route('/health')
-    def hello():
+    def health():
         return 'Ok'
+
+    @app.route('/now')
+    def now():
+        return str(datetime.now(tz=timezone.utc).isoformat())
 
     return app
 
