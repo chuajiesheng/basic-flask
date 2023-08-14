@@ -15,11 +15,6 @@ on:
   pull_request:
     branches: [ "master" ]
 
-env:
-  REGISTRY: env.REGISTRY
-  IMAGE_NAME: env.IMAGE_NAME
-
-
 jobs:
   build:
 
